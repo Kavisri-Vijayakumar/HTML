@@ -1,0 +1,154 @@
+<html>
+<head>
+
+<title>Online Quiz</title>
+
+<script>
+
+function result()
+{
+    var score=0;
+
+    if(document.getElementById("q1a").checked) score++;
+    if(document.getElementById("q2c").checked) score++;
+    if(document.getElementById("q3b").checked) score++;
+    if(document.getElementById("q4b").checked) score++;
+    if(document.getElementById("q5a").checked) score++;
+    if(document.getElementById("q6a").checked) score++;
+    if(document.getElementById("q7a").checked) score++;
+    if(document.getElementById("q8c").checked) score++;
+    if(document.getElementById("q9b").checked) score++;
+    if(document.getElementById("q10b").checked) score++;
+
+    var msg="";
+
+    if(score>=9)
+        msg="Outstanding!";
+    else if(score>=7)
+        msg="Very Good!";
+    else if(score>=5)
+        msg="Good!";
+    else
+        msg="Keep Practicing!";
+
+    alert("Quiz Completed!\n\nYour Score = "+score+"/10\n"+msg);
+}
+
+</script>
+
+</head>
+
+<body bgcolor="lightyellow">
+
+<center>
+
+<h1>ONLINE QUIZ</h1>
+
+<hr>
+
+</center>
+
+<form>
+
+<b>1. HTML stands for</b><br>
+
+<input type="radio" name="q1" id="q1a">Hyper Text Markup Language<br>
+<input type="radio" name="q1">Hyper Transfer Markup Language<br>
+<input type="radio" name="q1">High Text Machine Language<br>
+<input type="radio" name="q1">Home Tool Markup Language<br>
+
+<br>
+
+<b>2. Which tag inserts an image?</b><br>
+
+<input type="radio" name="q2">< picture ><br>
+<input type="radio" name="q2">< image ><br>
+<input type="radio" name="q2" id="q2c">< img ><br>
+<input type="radio" name="q2">< src ><br>
+
+<br>
+
+<b>3. JavaScript is a</b><br>
+
+<input type="radio" name="q3">Styling Language<br>
+<input type="radio" name="q3" id="q3b">Programming Language<br>
+<input type="radio" name="q3">Database Language<br>
+<input type="radio" name="q3">Operating System<br>
+
+<br>
+
+<b>4. CSS stands for</b><br>
+
+<input type="radio" name="q4">Computer Style Sheets<br>
+<input type="radio" name="q4" id="q4b">Cascading Style Sheets<br>
+<input type="radio" name="q4">Creative Style Sheets<br>
+<input type="radio" name="q4">Colorful Style Sheets<br>
+
+<br>
+
+<b>5. Which symbol is used for comments in JavaScript?</b><br>
+
+<input type="radio" name="q5" id="q5a">//<br>
+<input type="radio" name="q5">##<br>
+<input type="radio" name="q5"><!-- --><br>
+<input type="radio" name="q5">**<br>
+
+<br>
+
+<b>6. Which tag creates a hyperlink?</b><br>
+
+<input type="radio" name="q6" id="q6a">< a ><br>
+<input type="radio" name="q6">< link ><br>
+<input type="radio" name="q6">< href ><br>
+<input type="radio" name="q6">< url ><br>
+
+<br>
+
+<b>7. Which function displays a popup?</b><br>
+
+<input type="radio" name="q7" id="q7a">alert()<br>
+<input type="radio" name="q7">popup()<br>
+<input type="radio" name="q7">display()<br>
+<input type="radio" name="q7">message()<br>
+
+<br>
+
+<b>8. Which tag creates a table row?</b><br>
+
+<input type="radio" name="q8">< td ><br>
+<input type="radio" name="q8">< th ><br>
+<input type="radio" name="q8" id="q8c">< tr ><br>
+<input type="radio" name="q8">< table ><br>
+
+<br>
+
+<b>9. CSS is used for</b><br>
+
+<input type="radio" name="q9">Programming<br>
+<input type="radio" name="q9" id="q9b">Designing Web Pages<br>
+<input type="radio" name="q9">Networking<br>
+<input type="radio" name="q9">Database<br>
+
+<br>
+
+<b>10. JavaScript was developed by</b><br>
+
+<input type="radio" name="q10">Microsoft<br>
+<input type="radio" name="q10" id="q10b">Netscape<br>
+<input type="radio" name="q10">Google<br>
+<input type="radio" name="q10">Apple<br>
+
+<br><br>
+
+<center>
+
+<input type="button" value="Submit Quiz" onclick="result()">
+
+<input type="reset" value="Reset">
+
+</center>
+
+</form>
+
+</body>
+</html>
